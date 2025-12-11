@@ -1,0 +1,15 @@
+<?php
+$clients = [
+    "2001" => [
+        "nom_usuari" => "nil",
+        "contrasenya" => '$2y$10$2I0Ff8W8D2R1NVZg0a3/xe5NcXb0tQZq2mRfw9g8D.2kmfQpJwX7C', // client123
+        "nom" => "nil",
+        "cognoms" => "grasa",
+        "adreca" => "Carrer del Client, 5",
+        "email" => "nil@exemple.com",
+        "telefon" => "600000003",
+        "targeta" => "1234567812345678",
+        "ccv" => "123"
+    ]
+];
+?>

@@ -1,0 +1,24 @@
+<?php
+$treballadors = [
+    "1001" => [
+        "nom_usuari" => "admin",
+        "contrasenya" => '$2y$10$TPHFVplz7F3dUphmFB.mO.1r1mZs0EQcTbSCvXLv7zG7qN12F2/k6', // admin123
+        "tipus" => "administrador",
+        "nom" => "admin",
+        "cognoms" => "admin",
+        "adreca" => "Carrer de l'Administracio, 1",
+        "email" => "admin@botiga.com",
+        "telefon" => "600000001"
+    ],
+    "1002" => [
+        "nom_usuari" => "carlos",
+        "contrasenya" => '$2y$10$1g6ERoI3m4U3l6M/0x5X9u6XhCvlC.C1Wk1qF6tMIx2dXxoTPxje2', // treballador123
+        "tipus" => "treballador",
+        "nom" => "carlos",
+        "cognoms" => "lin",
+        "adreca" => "Carrer del Treball, 22",
+        "email" => "carlos@botiga.com",
+        "telefon" => "600000002"
+    ]
+];
+?>

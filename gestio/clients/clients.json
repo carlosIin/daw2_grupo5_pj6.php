@@ -1,0 +1,13 @@
+{
+    "2001": {
+        "nom_usuari": "nil",
+        "contrasenya": "$2y$12$KNeiRYBk0bhmTFAqcWCxpeihe8.\/yWiusRrwIu9ci7XkF59SbF24G",
+        "nom": "nil",
+        "cognoms": "grasa",
+        "adreca": "Carrer del Client, 5",
+        "email": "nil@exemple.com",
+        "telefon": "600000003",
+        "targeta": "1234567812345678",
+        "ccv": "123"
+    }
+}
