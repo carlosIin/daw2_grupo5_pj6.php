@@ -9,5 +9,16 @@
         "telefon": "600000003",
         "targeta": "1234567812345678",
         "ccv": "123"
+    },
+    "2002": {
+        "nom_usuari": "2001",
+        "contrasenya": "$2y$12$pWvf3gK5gXGpiWM5NnCqIuPeKicborv8FQfuRxwPDWZ6.39iCU6Wq",
+        "nom": "Cliente",
+        "cognoms": "Juan",
+        "adreca": "Calle 10",
+        "email": "cliente@gmail.com",
+        "telefon": "600000100",
+        "targeta": "3216544326548764",
+        "ccv": "432"
     }
 }

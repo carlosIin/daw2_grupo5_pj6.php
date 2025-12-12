@@ -3,33 +3,32 @@ require_once '../config.php';
 verificar_sessio();
 
 if (!es_administrador() && !es_treballador()) {
-    echo "Accés denegat";
-    exit();
+    exit("Accés denegat");
 }
 
-$directori = RUTA_COMANDES;
-$comandes = glob($directori . '/*.json');
+$fitxer_dir = RUTA_COMANDES . '/../comandes_no_gestionades';
+$fitxers = glob($fitxer_dir . '/*.json');
 ?>
+
 <!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <title>Comandes no gestionades</title>
+    <title>Llista comandes no gestionades</title>
 </head>
 <body>
-    <h1>Comandes no gestionades</h1>
-    <?php if(empty($comandes)): ?>
+    <h1>Llista de comandes no gestionades</h1>
+    <?php if(empty($fitxers)): ?>
         <p>No hi ha comandes pendents.</p>
     <?php else: ?>
         <ul>
-            <?php foreach($comandes as $fitxer): 
+            <?php foreach($fitxers as $fitxer): 
                 $nom_fitxer = basename($fitxer);
-            ?>
+                ?>
                 <li>
-                    <?= $nom_fitxer ?> 
-                    (<a href="visualitzar.php?fitxer=<?= $nom_fitxer ?>">Veure</a> | 
-                    <a href="procesar.php?fitxer=<?= $nom_fitxer ?>">Procesar</a> | 
-                    <a href="enviar_correu.php?fitxer=<?= $nom_fitxer ?>">Enviar correu</a>)
+                    <a href="visualitzar.php?fitxer=<?php echo urlencode($nom_fitxer); ?>">
+                        <?php echo $nom_fitxer; ?>
+                    </a>
                 </li>
             <?php endforeach; ?>
         </ul>

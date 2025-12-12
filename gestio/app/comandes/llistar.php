@@ -7,31 +7,32 @@ if (!es_administrador() && !es_treballador()) {
     exit();
 }
 
-// Llistar totes les comandes (gestionades i no gestionades)
-$comandes_no_gestionades = glob(RUTA_COMANDES . '/*.json');
-$comandes_gestionades = glob(RUTA_COMANDES_GESTIONADES . '/*.json');
+// Directori de comandes no gestionades
+$directori = __DIR__ . '/../comandes_no_gestionades';
+$comandes = scandir($directori);
 ?>
 <!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <title>Llistar comandes</title>
+    <title>Llistar comandes no gestionades</title>
 </head>
 <body>
-    <h1>Llista de comandes</h1>
-    <h2>No gestionades</h2>
-    <ul>
-        <?php foreach($comandes_no_gestionades as $fitxer): ?>
-            <li><?= basename($fitxer) ?> (<a href="visualitzar.php?fitxer=<?= basename($fitxer) ?>">Veure</a>)</li>
-        <?php endforeach; ?>
-    </ul>
+    <h1>Comandes no gestionades</h1>
 
-    <h2>Gestionades</h2>
-    <ul>
-        <?php foreach($comandes_gestionades as $fitxer): ?>
-            <li><?= basename($fitxer) ?> (<a href="visualitzar.php?fitxer=<?= basename($fitxer) ?>">Veure</a>)</li>
-        <?php endforeach; ?>
-    </ul>
+    <?php
+    $hi_ha_comandes = false;
+    foreach($comandes as $fitxer) {
+        if($fitxer != '.' && $fitxer != '..' && pathinfo($fitxer, PATHINFO_EXTENSION) === 'json') {
+            $hi_ha_comandes = true;
+            echo "<p><a href='visualitzar.php?fitxer=$fitxer'>$fitxer</a></p>";
+        }
+    }
+
+    if(!$hi_ha_comandes) {
+        echo "<p>No hi ha comandes pendents.</p>";
+    }
+    ?>
 
     <a href="../dashboard_admin.php">Tornar al Dashboard</a>
 </body>

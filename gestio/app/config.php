@@ -7,7 +7,10 @@ if (session_status() === PHP_SESSION_NONE) {
 define('RUTA_TREBALLADORS', __DIR__ . '/../treballadors');
 define('RUTA_CLIENTS', __DIR__ . '/../clients');
 define('RUTA_PRODUCTES', __DIR__ . '/../productes');
-define('RUTA_COMANDES', __DIR__ . '/../comandes_gestionades');
+
+// Comandes
+define('RUTA_COMANDES_NO_GESTIONADES', __DIR__ . '/../comandes_no_gestionades');
+define('RUTA_COMANDES_GESTIONADES', __DIR__ . '/../comandes_gestionades');
 
 // Funció per verificar si l'usuari està autenticat
 function verificar_sessio() {
