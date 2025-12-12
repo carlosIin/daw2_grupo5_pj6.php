@@ -43,7 +43,7 @@ $usuari = usuari_actual();
         </li>
         <li>Gestió comandes
             <ul>
-                <li><a href="comandes/llistar_no_gestionades.php">Llistar comandes no gestionades</a></li>
+				<li><a href="comandes/no_gestionades.php">Llistar comandes no gestionades</a></li>
                 <li><a href="comandes/visualitzar.php">Visualitzar comanda</a></li>
                 <li><a href="comandes/procesar.php">Processar comanda</a></li>
                 <li><a href="comandes/enviar_correu.php">Enviar correu comanda</a></li>

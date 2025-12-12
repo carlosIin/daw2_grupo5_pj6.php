@@ -1,0 +1,10 @@
+{
+  "id_comanda": "20251213_efgh5678",
+  "client": "2002",
+  "productes": [
+    {"id": "3007", "nom": "estanteria basica", "quantitat": 1, "preu": 80},
+    {"id": "3008", "nom": "armario ropero", "quantitat": 4, "preu": 280}
+  ],
+  "data": "2025-12-13",
+  "estat": "no gestionada"
+}

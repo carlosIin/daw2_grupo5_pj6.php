@@ -1,22 +1,52 @@
 {
-    "0": {
-        "id": "1001",
-        "nom": "Sof\u00e1 3 plazas",
-        "preu": 420.99
+    "3001": {
+        "id": "3001",
+        "nom": "sofa cama",
+        "preu": 500
     },
-    "2": {
-        "id": "1003",
-        "nom": "Mesa comedor",
-        "preu": 199.99
+    "3002": {
+        "id": "3002",
+        "nom": "mueble dormitorio",
+        "preu": 300
     },
-    "3": {
-        "id": "1004",
-        "nom": "Silla madera",
-        "preu": 49.99
+    "3003": {
+        "id": "3003",
+        "nom": "mueble tv",
+        "preu": 170
     },
-    "3232": {
-        "id": "3232",
-        "nom": "mueble",
-        "preu": 50
+    "3004": {
+        "id": "3004",
+        "nom": "conjunto dormitorio",
+        "preu": 420
+    },
+    "3005": {
+        "id": "3005",
+        "nom": "mesa comedor",
+        "preu": 120
+    },
+    "3006": {
+        "id": "3006",
+        "nom": "silla comedor",
+        "preu": 100
+    },
+    "3007": {
+        "id": "3007",
+        "nom": "estanteria basica",
+        "preu": 80
+    },
+    "3008": {
+        "id": "3008",
+        "nom": "armario ropero",
+        "preu": 280
+    },
+    "3009": {
+        "id": "3009",
+        "nom": "cama",
+        "preu": 500
+    },
+    "3010": {
+        "id": "3010",
+        "nom": "mesa redonda",
+        "preu": 150
     }
 }
