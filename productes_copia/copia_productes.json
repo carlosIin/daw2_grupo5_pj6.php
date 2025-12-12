@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1001",
+        "nom": "Sof\u00e1 3 plazas",
+        "preu": 420.99
+    },
+    {
+        "id": "1002",
+        "nom": "Sill\u00f3n relax",
+        "preu": 299.99
+    },
+    {
+        "id": "1003",
+        "nom": "Mesa comedor",
+        "preu": 199.99
+    },
+    {
+        "id": "1004",
+        "nom": "Silla madera",
+        "preu": 49.99
+    }
+]

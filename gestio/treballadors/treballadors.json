@@ -1,0 +1,22 @@
+{
+    "1001": {
+        "nom_usuari": "admin",
+        "contrasenya": "$2y$12$xkrCZX6jvXowzZCmJhOCmOWvkQoqIHwgAQk0xN4H00v.TCN2MfcVK",
+        "tipus": "administrador",
+        "nom": "admin",
+        "cognoms": "admin",
+        "adreca": "Carrer de l'Administracio, 1",
+        "email": "admin@botiga.com",
+        "telefon": "600000001"
+    },
+    "1002": {
+        "nom_usuari": "carlos",
+        "contrasenya": "$2y$12$n8odkSrbREa4v2jj0BLUgeHVsmXA.ZH.TiKiGzrU89lZMTB1b3jqW",
+        "tipus": "treballador",
+        "nom": "carlos",
+        "cognoms": "lin",
+        "adreca": "Carrer del Treball, 22",
+        "email": "carlos@botiga.com",
+        "telefon": "600000002"
+    }
+}
